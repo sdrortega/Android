@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="title_activity_main">OPENi HealthLife</string>
+    <string name="app_name">OPENi HealthLife</string>
+    <string name="hello_world">Health Life</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_graph">Chart</string>
+    <string name="txtLogin">Login</string>
+    <string name="txtPwd">Password</string>
+    <string name="txtConect">Connect</string>
+    <string name="title_activity_date_chart">Graph Results</string>
+    <string name="txtBack">Return</string>
+    <string name="view_as_char">View As Chart</string>
+    <string name="add_measurement">Add Measurement</string>
+    <string name="title_activity_main_options">Select an option</string>
+    <string name="title_activity_measurements_list">Measurements List</string>
+    <string name="textoCifrado">encryptedText</string>
+    <string name="title_activity_prueba">Prueba</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="user_name">Name</string>
+    <string name="email">email</string>
+    <string name="login">Login</string>
+    <string name="password">password</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="registerInfo">Click to Registry as User</string>
+    <string name="title_activity_new_measurement">Select a measurement and introduce a result for it</string>
+    <string name="result">Result</string>
+    <string name="title_activity_encrypt">Encryption</string>
+    <string name="cipherKey">Cipher Key</string>
+    <string name="encrypt">Encrypt</string>
+    <string name="title_activity_two_lines_chart">TwoLinesChart</string>
+    <string name="plain_text">Text to encrypt</string>
+    <string name="clear">clear</string>
+    <string name="decrypt">decrypt</string>
+
+</resources>

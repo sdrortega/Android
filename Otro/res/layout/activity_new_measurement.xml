@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/result"
+        android:layout_alignLeft="@+id/result"
+        android:layout_marginBottom="61dp" />
+
+    <EditText
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:ellipsize="none"
+        android:ems="10"
+        android:maxLines="1"
+        android:minLines="1" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/result"
+        android:layout_alignBottom="@+id/result"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="23dp"
+        android:text="@string/result"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/metric"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/result"
+        android:layout_below="@+id/spinner1"
+        android:text="" />
+
+    <ImageButton
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/metric"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="26dp"
+        android:contentDescription="@string/save"
+        android:onClick="btnSaveClicked"
+        android:src="@drawable/save_48" />
+
+    <ImageButton
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnSave"
+        android:layout_marginLeft="32dp"
+        android:layout_toRightOf="@+id/btnSave"
+        android:contentDescription="@string/cancel"
+        android:onClick="btnCancelClicked"
+        android:src="@drawable/close_window_48" />
+
+</RelativeLayout>

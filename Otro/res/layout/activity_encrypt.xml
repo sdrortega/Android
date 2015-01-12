@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <!-- 
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_activity_encrypt" />
+ -->
+    <EditText
+        android:id="@+id/encryptedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/plainText"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <ImageButton
+        android:id="@+id/encrypt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/plainText"
+        android:contentDescription="@string/encrypt"
+        android:maxWidth="@android:dimen/app_icon_size"
+        android:onClick="btnEncrypt"
+        android:src="@drawable/data_encryption_48" />
+
+    <ImageButton
+        android:id="@+id/decrypt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/decrypt"
+        android:onClick="btnDecrypt"
+        android:src="@drawable/back_48" />
+
+    <EditText
+        android:id="@+id/decryptedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/encryptedText"
+        android:layout_below="@+id/decrypt"
+        android:layout_marginTop="18dp"
+        android:ems="10" 
+        android:contentDescription=""/>
+
+    <EditText
+        android:id="@+id/plainText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/decrypt"
+        android:layout_alignLeft="@+id/encryptionPwd"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="@string/plain_text" >        
+    </EditText>
+
+    <EditText
+        android:id="@+id/encryptionPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/encrypt"
+        android:layout_marginBottom="27dp"
+        android:layout_toLeftOf="@+id/encrypt"
+        android:ems="10"
+        android:inputType="textPassword" >
+        <requestFocus />
+       </EditText>
+
+    <ImageButton
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/decryptedText"
+        android:layout_below="@+id/decryptedText"
+        android:layout_marginTop="27dp"
+        android:contentDescription="@string/save"
+        android:onClick="btnSaveClicked"
+        android:src="@drawable/save_48" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/encryptionPwd"
+        android:layout_toLeftOf="@+id/btnSave"
+        android:text="@string/cipherKey"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ImageButton
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/decryptedText"
+        android:layout_alignTop="@+id/btnSave"
+        android:layout_marginLeft="34dp"
+        android:contentDescription="@string/clear"
+        android:onClick="btnCancelClicked"
+        android:src="@drawable/close_window_48" />
+
+</RelativeLayout>

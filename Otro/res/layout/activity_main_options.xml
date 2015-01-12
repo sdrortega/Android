@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <ImageButton
+        android:id="@+id/addMeasurement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="87dp"
+        android:contentDescription="@string/add_measurement"
+        android:scaleType="fitXY"
+        android:src="@drawable/add_file_48"
+        android:onClick="btnAddMeasurement" />
+
+    <ImageButton
+        android:id="@+id/viewChart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/addMeasurement"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/view_as_char"
+        android:onClick="btnViewChart"
+        android:scaleType="fitXY"
+        android:src="@drawable/polyline_48" />
+
+    <ImageButton
+        android:id="@+id/encrypt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/viewChart"
+        android:layout_below="@+id/viewChart"
+        android:layout_marginTop="45dp"
+        android:src="@drawable/data_encryption_48"
+        android:contentDescription="@string/encrypt"
+        android:onClick="btnEncryption" />
+
+</RelativeLayout>
